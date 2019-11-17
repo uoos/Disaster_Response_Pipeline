@@ -8,11 +8,17 @@ This repository contains code for web app where an emergency worker can input a 
 
 ## File Descriptions
 process_data.py: This code contains the data cleaning pipeline that loads the messages and categories datasets, merges the two datasets, cleans the data, stores it in a SQLite database.
+
 train_classifier.py: This code contains a machine learning pipeline that loads data from the SQLite database, splits the dataset into training and test sets, builds a text processing and machine learning pipeline, trains and tunes a model using GridSearchCV, outputs results on the test set, exports the final model as a pickle file.
+
 run.py: This code contains the function to run the web app using Frask.
+
 ETL Pipeline Preparation.ipynb: The code is for data cleaning pipeline preparation.
+
 ML Pipeline Preparation.ipynb: The code is for ML Pipeline preparation.
+
 disaster_messages.csv: Processing data sample
+
 disaster_categories.csv: Processing data sample
 
 ## Running Instructions
